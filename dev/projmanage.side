@@ -1,0 +1,135 @@
+{
+  "id": "733f33ec-377c-4d1b-8f12-1058ca00e3fe",
+  "version": "2.0",
+  "name": "save pdf",
+  "url": "https://www.linkedin.com",
+  "tests": [{
+    "id": "4be57f10-0aa9-46fa-9e02-0d4e7ced0f94",
+    "name": "download profile",
+    "commands": [{
+      "id": "605d8222-6b1f-4fae-afd4-f459a96b63d9",
+      "comment": "",
+      "command": "open",
+      "target": "/feed/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e13bf48e-2a99-49f3-bb62-3cede8e086e7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "826x792",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "73b2c2b6-a7ea-49d0-8871-c5d572e698f2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.search-global-typeahead__collapsed-search-button-icon > .mercado-match",
+      "targets": [
+        ["css=.search-global-typeahead__collapsed-search-button-icon > .mercado-match", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "29fe46e3-7926-4035-9b09-e7c112016364",
+      "comment": "",
+      "command": "click",
+      "target": "css=#basic-result-ember163 .search-global-typeahead-hit__text",
+      "targets": [
+        ["css=#basic-result-ember163 .search-global-typeahead-hit__text", "css:finder"],
+        ["xpath=//li[@id='basic-result-ember163']/div/span/span", "xpath:idRelative"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "201ab6af-aab5-47de-adf8-7a6d6c185957",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3) > .search-navigation-panel__button",
+      "targets": [
+        ["css=li:nth-child(3) > .search-navigation-panel__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[18]", "xpath:attributes"],
+        ["xpath=//section[@id='ember194']/ul/li[3]/button", "xpath:idRelative"],
+        ["xpath=//section/ul/li[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4790ac29-b56d-45c3-b45a-9b271861a9ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=#\\39KuxyYJhTSCavN2\\/5\\/Zr3Q\\=\\= .reusable-search__result-container:nth-child(2) .entity-result__content",
+      "targets": [
+        ["css=#\\39KuxyYJhTSCavN2\\/5\\/Zr3Q\\=\\= .reusable-search__result-container:nth-child(2) .entity-result__content", "css:finder"],
+        ["xpath=//div[@id='9KuxyYJhTSCavN2/5/Zr3Q==']/div/ul[2]/li[2]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/ul[2]/li[2]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19bd610f-4f24-4381-af45-ea7f96ab7f64",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=See all people results",
+      "targets": [
+        ["linkText=See all people results", "linkText"],
+        ["css=#\\39KuxyYJhTSCavN2\\/5\\/Zr3Q\\=\\= .search-results__cluster-bottom-banner > .app-aware-link", "css:finder"],
+        ["xpath=//a[contains(text(),'See all people results')]", "xpath:link"],
+        ["xpath=//div[@id='9KuxyYJhTSCavN2/5/Zr3Q==']/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.linkedin.com/search/results/people/?keywords=data%20analyst&origin=CLUSTER_EXPANSION')]", "xpath:href"],
+        ["xpath=//div[3]/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'See all people results')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf9a3c40-bd62-4362-95e1-699a229db395",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "221f9e6c-8a99-44a0-ac3f-a4e5b2e67e87",
+      "comment": "",
+      "command": "click",
+      "target": "css=.reusable-search__result-container:nth-child(1) .app-aware-link:nth-child(1) > span:nth-child(1) > span:nth-child(1)",
+      "targets": [
+        ["css=.reusable-search__result-container:nth-child(1) .app-aware-link:nth-child(1) > span:nth-child(1) > span:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='aGDpmmYcQtqh2FS0do69Pw==']/div/ul/li/div/div/div[2]/div/div/div/span/span/a/span/span", "xpath:idRelative"],
+        ["xpath=//a/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a38de91f-7947-42e8-ae26-a29f6b5d7926",
+      "comment": "",
+      "command": "click",
+      "target": "id=ember427",
+      "targets": [
+        ["id=ember427", "id"],
+        ["css=#ember427", "css:finder"],
+        ["xpath=//button[@id='ember427']", "xpath:attributes"],
+        ["xpath=//div[@id='ember426']/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19b0d2fb-9593-48e5-ac4b-0dc4c0da60b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ember430 > .display-flex",
+      "targets": [
+        ["css=#ember430 > .display-flex", "css:finder"],
+        ["xpath=//div[@id='ember430']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/ul/li[2]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c6cab847-efa6-4f29-afa8-7c03223f4669",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4be57f10-0aa9-46fa-9e02-0d4e7ced0f94"]
+  }],
+  "urls": ["https://www.linkedin.com/"],
+  "plugins": []
+}

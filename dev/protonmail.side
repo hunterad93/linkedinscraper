@@ -1,0 +1,120 @@
+{
+  "id": "c88a2966-d908-472b-9930-4b379f93bf19",
+  "version": "2.0",
+  "name": "protonmail",
+  "url": "https://account.proton.me",
+  "tests": [{
+    "id": "cfaad581-63ac-4458-b3d4-509832f982d0",
+    "name": "login and navigate to first email",
+    "commands": [{
+      "id": "d4404696-4c44-4b21-a6c3-acc14d064afe",
+      "comment": "",
+      "command": "open",
+      "target": "/mail",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75d26d19-9096-4cc6-a9a1-eb2d161616e8",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6136645d-8168-4713-806f-656d6c0c1d49",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "00xerox00@proton.me"
+    }, {
+      "id": "c71fe7b4-ecd5-41df-b265-5727b9eae60d",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "Linked00!"
+    }, {
+      "id": "eb1dba42-3d0a-4889-a8ae-4a271d647ad4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button-large",
+      "targets": [
+        ["css=.button-large", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "38e3a7f8-9d4b-429f-a075-64a823657afd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-container-wrapper:nth-child(1) .item-subject .max-w100",
+      "targets": [
+        ["css=.item-container-wrapper:nth-child(1) .item-subject .max-w100", "css:finder"],
+        ["xpath=//div[3]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Secure your schedule with Proton Calendar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "80c177e7-52cb-4057-8aa3-c637941eae6d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button:nth-child(11) > .icon-16p",
+      "targets": [
+        ["css=.button:nth-child(11) > .icon-16p", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a7f3a16-9efa-4fa1-947a-1011782e9c1b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-item:nth-child(10) .flex-item-fluid",
+      "targets": [
+        ["css=.dropdown-item:nth-child(10) .flex-item-fluid", "css:finder"],
+        ["xpath=//div[@id='dropdown-1114']/div[2]/ul/li[10]/button/span", "xpath:idRelative"],
+        ["xpath=//li[10]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'View headers')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6b190c7-083b-47b2-9cb9-3a88a77cae0a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button-solid-norm:nth-child(2)",
+      "targets": [
+        ["css=.button-solid-norm:nth-child(2)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Download')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1092967f-b55d-4e8d-ba05-09a479f94382",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cfaad581-63ac-4458-b3d4-509832f982d0"]
+  }],
+  "urls": ["https://account.proton.me/"],
+  "plugins": []
+}
