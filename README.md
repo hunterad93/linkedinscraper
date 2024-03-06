@@ -19,6 +19,5 @@ This project involves automating various tasks using Selenium and Playwright. Th
 
 ## Future Work
 
-- Refactor the code to remove redundancy.
-- Improve error handling and add logging for better debugging.
-- Consider using a database for storing account information instead of CSV files.
+- Improve browser fingerprinting
+- Include proxy rotation
